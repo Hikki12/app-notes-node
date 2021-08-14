@@ -1,0 +1,150 @@
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    padding: 0 4vh;
+}
+
+/*navbar*/
+nav {
+    display: flex;
+}
+
+nav a {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    -ms-flex-align: end;
+    text-align: end;
+}
+
+/* Login section */
+
+.form__section, .notes__section {
+    padding: 0 20px;
+}
+
+.form__container {
+    margin: 10vh auto;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    
+    align-self: center;
+    justify-content: center;
+}
+
+.form__container h2 {
+    text-align: center;
+}
+
+.form__container form {
+    
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    min-width: 220px;
+    max-width: 320px;
+    width: 260px;
+    margin: 0 auto;
+}
+
+.form__container form input {
+    height: 30px;
+}
+
+.form__container--buttons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form__container--buttons input, a {
+    align-self: center;
+}
+
+.form__container--buttons input {
+    width: 80px;
+    height: 30px;
+}
+
+.form__container--buttons a {
+    margin-top: 10px;
+}
+
+.notes__section {
+    display: flex;
+    flex-direction: column;
+    margin: 2vh auto;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+
+/* note */
+
+.note_add-button {
+    display: flex;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+}
+
+.note__container {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 12px;
+    align-self: center;
+    height: 150px;
+    width: 270px;
+    border: 2px solid gray;
+}
+
+
+.note__container .note__title-container {
+    display: flex;
+    height: 35px;
+}
+
+.note__title-container h3 {
+    position: absolute;
+    top: -7px;
+    width: 100%;
+    
+}
+
+.note__title-container .note__delete-button {
+    position:absolute;
+    display: flex;
+    left: calc(100% - 49px);
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    border-radius: 8px;
+    background: gray;
+    color: white;
+}
+
+.note__container p {
+    text-align: justify;
+    height: 70px;
+    overflow-y: scroll;
+}
